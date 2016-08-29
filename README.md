@@ -46,15 +46,27 @@ Second meeting - date and time TBA
 Feel free to submit pull requests to add to or update this list!
 
 [Haskell Language Home Page](https://haskell-lang.org/) - your portal to the Haskell universe (preferred to haskell.org)
+
 [Stackage](https://www.stackage.org/) - search for Haskell modules or functions (Google has a hard time deciphering the funny operators, so use this instead)
+
 [Functional Programming Slack group](http://fpchat.com/) - a great resource for beginners and advanced coders alike
+
 \#haskell and \#haskell-beginners - IRC channels on [freenode](https://freenode.net/)
+
 Haskell on [reddit](https://www.reddit.com/r/haskell/)
+
 [New York Haskell Users Group](https://www.meetup.com/NY-Haskell/) on Meetup.com
+
 [Haskell 2010 Language Report](https://www.haskell.org/onlinereport/haskell2010/) - the language specification in full
+
 Haskell on [Stack Overflow](http://stackoverflow.com/questions/tagged?tagnames=haskell)
+
 [A Gentle Introduction to Haskell](https://www.haskell.org/tutorial/) - A little dated but still a valuable reference
+
 [Haskell for All](http://www.haskellforall.com/) - Gabriel Gonzalez's excellent blog
+
 [School of Haskell](https://www.schoolofhaskell.com/)
+
 [How I Start: Haskell](http://howistart.org/posts/haskell/1) - how to set-up a new Haskell project
+
 [Oliver Charles's Blog](https://ocharles.org.uk/blog/) - including 24 Days of Hackage
