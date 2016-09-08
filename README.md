@@ -4,7 +4,10 @@ Starting in September 2016, we will work through [Haskell Programming from First
 
 To prepare for your first visit, please do the following (as much as you can):
 
-- **Purchase your own copy of the book**
+- **Join the New York Haskell Users Group [Meetup](https://www.meetup.com/NY-Haskell/) and [Slack team](http://ny-haskell.herokuapp.com/)**
+All announcements pertaining to this study group will be sent out via Meetup and Slack.
+
+- **[Purchase](https://gumroad.com/l/haskellbook) your own copy of the book (discount codes available: see below)**
 You will need your own copy on your own machine so you can work with the PDF and your terminal open side-by-side. This book was independently researched, written, and published by two Haskell developers working in their spare time to support education in functional programming. As an aspiring member of our strong and supportive community, we know you are too committed to the spirit of pure actions to "borrow" someone else's copy. They typeset it with LaTeX: give them a break!
 
 - **Install [Stack](https://docs.haskellstack.org/en/stable/README/), the Haskell project development tool**
@@ -17,29 +20,66 @@ You don't need to do much more than create a directory for your code and make su
 Since we'll be learning Haskell together in this group, it is essential that you work through each chapter on your own first so that you come prepared knowing what you need help with _and_ what you understand well enough to teach others. If you get stuck on a problem, keep moving, but do not just skip the exercises entirely.
 #### For the sake of emphasis: _do not skip the exercises!_
 
-**Note**: _If you are a complete beginner to programming or for whatever reason have trouble installing Haskell on your computer, don't worry about it! Come to the study group, and we'll help you figure it out. Fortunately, you don't even need a computer to work through Chapter 1—just pen and paper and patience. So make sure you at least do that much, even if you require tech support._
+If you are a complete beginner to programming or for whatever reason have trouble installing Haskell on your computer, don't worry about it! Come to the study group, and we'll help you figure it out. Fortunately, you don't even need a computer to work through Chapter 1—just pen and paper and patience. So make sure you at least do that much, even if you require tech support.
+
+**Discount codes** for the book are available if you need one. The authors do not want the price of the book to dissuade anyone from purchasing it, so please contact me or the authors directly if the cost is prohibitive and you'd like a discount.
 
 ## Logistics
 
 ### Format
 
-We will work through the book at the pace of roughly a chapter a week, meeting for about 2 hours. This is not a class, however, so do not come expecting a lecture. Instead, you will have the opportunity to discuss concepts and exercises that gave you difficulty when working through the chapter on your own. You are encouraged to hew as closely to this regular, weekly schedule as you are able so as to maintain your momentum. That said, if life gets in the way, so be it: but do your best to catch up, and avoid skipping any material as each chapter builds on the last. Did we mention that you _should not under any circumstances whatsoever skip the exercises?_ Just making sure!
+We will work through the book at the pace of roughly a chapter a week, meeting for about 2 hours. **This is not a class**, however, so do not come expecting a lecture. Instead, you will have the opportunity to discuss concepts and exercises that gave you difficulty when working through the book on your own. You are encouraged to hew as closely to this regular, weekly schedule as you are able so as to maintain your momentum. That said, if life gets in the way, so be it: but do your best to catch up, and avoid skipping any material as each chapter builds on the last. Did we mention that you _should not under any circumstances whatsoever skip the exercises?_ Just making sure!
 
-### Meeting Location
+### Signing up
 
-TBA
+All meetings will be announced through the **New York Haskell Users Group** [Meetup](https://www.meetup.com/NY-Haskell/) and [Slack team](http://ny-haskell.herokuapp.com/). You must RSVP to attend each meeting separately, as space is at a premium. If you cannot attend a meeting because it is full, please continue to work on your own anyway and come to a future meeting or talk to us on Slack.
 
-### Tentative Schedule
+### Schedule
 
-Make sure you [sign up](http://bit.ly/study-haskell-nyc) for the study group to receive confirmations about dates and times. You should also consider joining the [New York Haskell Users Group](https://www.meetup.com/NY-Haskell/), where this information will also be posted.
+Meeting days, times, and locations may vary from week to week depending on the availability of space. If you can help with hosting future meetings, please contact me!
 
-First meeting - date and time TBA
-- Hellos
+#### Meeting 1 — 20 September 2016 at 6 PM
+
+**Behance**
+104 5th Avenue
+New York, NY 10011
+
+[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/233953052/) to attend.
+
+Agenda:
+- Hellos and brief introduction to Haskell and functional programming
 - Chapter 1, All You Need is Lambda
-
-Second meeting - date and time TBA
-- Review Chapter 1
 - Chapter 2, Hello Haskell!
+
+Links (please pull request to add more):
+[Programming with Nothing — Tom Stuart](https://www.youtube.com/watch?v=VUhlNx_-wYk)
+[Y Not: Adventures in Functional Programming — Jim Weirich](https://www.youtube.com/watch?v=FITJMJjASUs)
+[CSE 340 S16: Lambda Calculus](https://www.youtube.com/watch?v=KoIdCHDbpMI) (and subsequent lectures in the series)
+
+#### Meeting 2 — Date and Time TBA
+
+Location TBA
+
+Agenda:
+- Review chapters 1 and 2
+- Chapter 3, Strings
+- Start Chapter 4, Basic datatypes (time permitting)
+
+#### Meeting 3 - Date and Time TBA
+
+Location TBA
+
+Agenda:
+- Review prior material
+- Chapter 4, Basic datatypes
+
+#### Meeting 4 - Date and Time TBA
+
+Location TBA
+
+Agenda:
+- Review
+- Chapter 5, Types
 
 ### Resources and Bibliography for Further Reading
 
@@ -48,6 +88,8 @@ Feel free to submit pull requests to add to or update this list!
 [Haskell Language Home Page](https://haskell-lang.org/) - your portal to the Haskell universe (preferred to haskell.org)
 
 [Stackage](https://www.stackage.org/) - search for Haskell modules or functions (Google has a hard time deciphering the funny operators, so use this instead)
+
+[Haskell is easy](http://haskelliseasy.readthedocs.io/en/latest/) - a curated list of Haskell libraries
 
 [Functional Programming Slack group](http://fpchat.com/) - a great resource for beginners and advanced coders alike
 
