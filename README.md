@@ -41,7 +41,7 @@ Meeting days, times, and locations may vary from week to week depending on the a
 #### Meeting 1 — 20 September 2016 at 6 PM
 
 **Behance**
-104 5th Avenue
+104 5th Avenue, 4th Floor
 New York, NY 10011
 
 [RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/233953052/) to attend.
@@ -56,9 +56,13 @@ Links (please pull request to add more):
 [Y Not: Adventures in Functional Programming — Jim Weirich](https://www.youtube.com/watch?v=FITJMJjASUs)
 [CSE 340 S16: Lambda Calculus](https://www.youtube.com/watch?v=KoIdCHDbpMI) (and subsequent lectures in the series)
 
-#### Meeting 2 — Date and Time TBA
+#### Meeting 2 — 26 September 2016 at 6:30 PM
 
-Location TBA
+**ThoughtWorks**
+99 Madison Avenue, 15th Floor
+New York, NY 10016
+
+RSVP on Meetup to attend.
 
 Agenda:
 - Review chapters 1 and 2
