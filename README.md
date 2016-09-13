@@ -62,7 +62,7 @@ Links (please pull request to add more):
 99 Madison Avenue, 15th Floor
 New York, NY 10016
 
-RSVP on Meetup to attend.
+[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234096348/) to attend.
 
 Agenda:
 - Review chapters 1 and 2
