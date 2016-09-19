@@ -5,7 +5,7 @@ Starting in September 2016, we will work through [Haskell Programming from First
 To prepare for your first visit, please do the following (as much as you can):
 
 - **Join the New York Haskell Users Group [Meetup](https://www.meetup.com/NY-Haskell/) and [Slack team](http://ny-haskell.herokuapp.com/)**
-All announcements pertaining to this study group will be sent out via Meetup and Slack.
+All announcements pertaining to this study group will be sent out via Meetup and Slack. On the NYHUG Slack, look for the #study channel.
 
 - **[Purchase](https://gumroad.com/l/haskellbook) your own copy of the book (discount codes available: see below)**
 You will need your own copy on your own machine so you can work with the PDF and your terminal open side-by-side. This book was independently researched, written, and published by two Haskell developers working in their spare time to support education in functional programming. As an aspiring member of our strong and supportive community, we know you are too committed to the spirit of pure actions to "borrow" someone else's copy. They typeset it with LaTeX: give them a break!
@@ -69,20 +69,25 @@ Agenda:
 - Chapter 3, Strings
 - Start Chapter 4, Basic datatypes (time permitting)
 
-#### Meeting 3 - Date and Time TBA
+#### Meeting 3 - 3 October 2016 at 6:30 PM
 
-Location TBA
+**Yieldmo**
+218 W. 18th Street, 2nd Floor
+New York, NY 10011
+
+RSVP on Meetup to attend.
 
 Agenda:
 - Review prior material
 - Chapter 4, Basic datatypes
 
-#### Meeting 4 - Date and Time TBA
+#### Meeting 4 - 10 October 2016 at 6:30 PM
 
-Location TBA
+**ThoughtWorks**
+99 Madison Avenue, 15th Floor
+New York, NY 10016
 
 Agenda:
-- Review
 - Chapter 5, Types
 
 ### Resources and Bibliography for Further Reading
