@@ -21,13 +21,16 @@ Answer - `(λx. ((x y)(λx. (y x))))`
 ### Free variables
 
 1. `λx. x z λy. x y`
-`(λx. ((x `_**z**_`) (λy. (x y))))`
+
+Answer - `(λx. ((x `_**z**_`) (λy. (x y))))`
 
 2. `(λx. x z) λy. w λw. w y z x`
-`((λx. (x `_**z**_`)) (λy. (`_**w**_` (λw. ((((w y) `_**z**_`) `_**x**_`))))))`
+
+Answer - `((λx. (x `_**z**_`)) (λy. (`_**w**_` (λw. ((((w y) `_**z**_`) `_**x**_`))))))`
 
 3. `λx. x y λx. y x`
-`(λx. ((x `_**y**_`) (λx. (`_**y**_` x))))`
+
+Answer - `(λx. ((x `_**y**_`) (λx. (`_**y**_` x))))`
 
 ### β-reduction
 
@@ -93,7 +96,6 @@ Answer - `(λx. ((x y)(λx. (y x))))`
     `q q q`
     
     
-
 7.  `(λc. c(λx. (λx. λy. y))(λx. λy. x))(λq. q)`
 
     `(λq. q)(λx. (λx. λy. y))(λx. λy. x)`
@@ -103,61 +105,108 @@ Answer - `(λx. ((x y)(λx. (y x))))`
     `(λx. λy. y)`
     
     `λx. λy. y`
+    
 
-8. `(λz. z)(λy. y y)(λx. x a)`
-`(λz. z)(λy. y y)(λx. x a)`
-`(λy. y y)(λx. x a)`
-`(λx. x a)(λx. x a)`
-`(λx. x a) a`
-`a a`
+8.  `(λz. z)(λy. y y)(λx. x a)`
 
-9. `(λz. z)(λz. z z)(λz. z y)`
-`(λz. z)(λz. z z)(λz. z y)`
-`(λz. z z)(λz. z y)`
-`(λz. z y)(λz. z y)`
-`(λz. z y) y`
-`y y`
+    `(λz. z)(λy. y y)(λx. x a)`
+    
+    `(λy. y y)(λx. x a)`
+    
+    `(λx. x a)(λx. x a)`
+    
+    `(λx. x a) a`
+    
+    `a a`
+
+9.  `(λz. z)(λz. z z)(λz. z y)`
+
+    `(λz. z)(λz. z z)(λz. z y)`
+    
+    `(λz. z z)(λz. z y)`
+    
+    `(λz. z y)(λz. z y)`
+    
+    `(λz. z y) y`
+    
+    `y y`
 
 10. `(λx. λy. x y y)(λa. a) b`
-`(λx. λy. x y y)(λa. a) b`
-`(λy. (λa. a) y y) b`
-`(λa. a) b b`
-`b b`
+
+    `(λx. λy. x y y)(λa. a) b`
+    
+    `(λy. (λa. a) y y) b`
+    
+    `(λa. a) b b`
+    
+    `b b`
+    
 
 11. `(λx. λy. x y y)(λy. y) y`
-`(λx. λy. x y y)(λy. y) y`
-`(λx. λa. x a a)(λy. y) y`
-`(λa. (λy. y) a a) y`
-`(λy. y) y y`
-`y y`
+
+    `(λx. λy. x y y)(λy. y) y`
+    
+    `(λx. λa. x a a)(λy. y) y`
+    
+    `(λa. (λy. y) a a) y`
+    
+    `(λy. y) y y`
+    
+    `y y`
+
 
 12. `(λx. x x)(λy. y x) z`
-`(λx. x x)(λy. y x) z`
-`(λy. y x)(λy. y x) z`
-`(λy. y x) x z`
-`x x z`
+
+    `(λx. x x)(λy. y x) z`
+    
+    `(λy. y x)(λy. y x) z`
+    
+    `(λy. y x) x z`
+    
+    `x x z`
+    
 
 13. `(λx. (λy. (x y)) y) z`
-`(λx. (λy. (x y)) y) z`
-`(λx. (λa. (x a)) y) z`
-`(λa. (z a)) y`
-`z y`
+
+    `(λx. (λy. (x y)) y) z`
+    
+    `(λx. (λa. (x a)) y) z`
+    
+    `(λa. (z a)) y`
+    
+    `z y`
+    
 
 14. `((λx. x x)(λy. y))(λy. y)`
-`((λx. x x)(λy. y))(λy. y)`
-`((λy. y)(λy. y))(λy. y)`
-`(λy. y)(λy. y)`
-`λy. y`
+
+    `((λx. x x)(λy. y))(λy. y)`
+
+    `((λy. y)(λy. y))(λy. y)`
+
+    `(λy. y)(λy. y)`
+
+    `λy. y`
 
 15. `(((λx. λy. (x y))(λy. y)) w)`
-`(((λx. λy. (x y))(λy. y)) w)`
-`(((λx. λa. (x a))(λy. y)) w)`
-`((λa. ((λy. y) a)) w)`
-`(λy. y) w`
-`w`
+    
+    `(((λx. λy. (x y))(λy. y)) w)`
+    
+    `(((λx. λa. (x a))(λy. y)) w)`
+    
+    `((λa. ((λy. y) a)) w)`
+    
+    `(λy. y) w`
+    
+    `w`
 
 16. `(λx. y)((λy. y y y)(λx. x x x))`
-`y`
-_or_
-`(λx. y)((λx. x x x)(λx. x x x)(λx. x x x))`
-_...ad infinitum_
+
+    `y`
+    
+    _or_
+    
+    `(λx. y)((λx. x x x)(λx. x x x)(λx. x x x))
+    
+    _...ad infinitum_
+    
+    
