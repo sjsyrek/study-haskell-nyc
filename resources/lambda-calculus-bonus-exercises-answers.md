@@ -29,9 +29,13 @@ _Borrowed from [CSE340](https://www.youtube.com/watch?v=KoIdCHDbpMI) at Arizona 
 ### β-reduction
 
 1. `(λx. x λy. λz. z y x)(y z)`
+
 `(λx. x(λy. (λz. z y x)))(y z)`
+
 `(λx. x(λy1. (λz1. z1 y1 x)))(y z)`
+
 `y z(λy1. λz1. z1 y1 y z)`
+
 `y z(λy1. λz1. z1 y1 yz)`
 
 2. `(λn. λf. λx. f(n f x))(λx. λf. x x x x f)`
