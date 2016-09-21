@@ -7,13 +7,16 @@ _Borrowed from [CSE340](https://www.youtube.com/watch?v=KoIdCHDbpMI) at Arizona 
 ### Parentheses
 
 1. `λx. x z λy. x y`
-`(λx. ((x z)(λy. (x y))))`
+
+Answer - `(λx. ((x z)(λy. (x y))))`
 
 2. `(λx. x z) λy. w λw. w y z x`
-`((λx. (x z))(λy. (w (λw. ((((w y) z) x))))))`
+
+Answer - `((λx. (x z))(λy. (w (λw. ((((w y) z) x))))))`
 
 3. `λx. x y λx. y x`
-`(λx. ((x y)(λx. (y x))))`
+
+Answer - `(λx. ((x y)(λx. (y x))))`
 
 ### Free variables
 
@@ -28,49 +31,78 @@ _Borrowed from [CSE340](https://www.youtube.com/watch?v=KoIdCHDbpMI) at Arizona 
 
 ### β-reduction
 
-1. `(λx. x λy. λz. z y x)(y z)`
+1.  `(λx. x λy. λz. z y x)(y z)`
 
-`(λx. x(λy. (λz. z y x)))(y z)`
+    `(λx. x(λy. (λz. z y x)))(y z)`
 
-`(λx. x(λy1. (λz1. z1 y1 x)))(y z)`
+    `(λx. x(λy1. (λz1. z1 y1 x)))(y z)`
 
-`y z(λy1. λz1. z1 y1 y z)`
+    `y z(λy1. λz1. z1 y1 y z)`
 
-`y z(λy1. λz1. z1 y1 yz)`
+    `y z(λy1. λz1. z1 y1 yz)`
+    
 
-2. `(λn. λf. λx. f(n f x))(λx. λf. x x x x f)`
-`(λn. λf. λx. f(n f x))(λx. λg. x x x x g)`
-`λf. λx. f((λx. λg. x x x x g)(f x))`
-`λf. λx. f((λg. f f f f g)(x))`
-`λf. λx. f(f f f f x)`
-`λfx. f f f f f x`
+2.  `(λn. λf. λx. f(n f x))(λx. λf. x x x x f)`
 
-3. `(λx. x(λx. λy. y)(λy. λx. y))(λx. λy. y)`
-`(λx. x(λx. λy. y)(λy. λx. y))(λp. λq. q)`
-`(λp. λq. q)(λx. λy. y)(λy. λx. y)`
-`(λq. q)(λy. λx. y)`
-`λy. λx. y`
+    `(λn. λf. λx. f(n f x))(λx. λg. x x x x g)`
+  
+    `λf. λx. f((λx. λg. x x x x g)(f x))`
+  
+    `λf. λx. f((λg. f f f f g)(x))`
+  
+    `λf. λx. f(f f f f x)`
+  
+    `λfx. f f f f f x`
+    
 
-4. `(λx. λy. xy)(λz. (λc. y) z)`
-`λy. ((λz. (λc. y) z)(y))`
-`λy1. ((λz. (λc. y) z)(y))`
-`λy1. ((λc. y)(y))`
-`λy1. y`
+3.  `(λx. x(λx. λy. y)(λy. λx. y))(λx. λy. y)`
 
-5. `(λx. λy. x y)(λz. (λc. c y) z)`
-`(λy1. (λz. (λc. c y) z)(y1))`
-`(λy1. (λc. c y)(y1))`
-`λy1. y1 y`
+    `(λx. x(λx. λy. y)(λy. λx. y))(λp. λq. q)`
+    
+    `(λp. λq. q)(λx. λy. y)(λy. λx. y)`
+    
+    `(λq. q)(λy. λx. y)`
+    
+    `λy. λx. y`
+    
 
-6. `(λx. x q)(λy. y y y)`
-`(λy. y y y)(q)`
-`q q q`
+4.  `(λx. λy. xy)(λz. (λc. y) z)`
 
-7. `(λc. c(λx. (λx. λy. y))(λx. λy. x))(λq. q)`
-`(λq. q)(λx. (λx. λy. y))(λx. λy. x)`
-`(λx. (λx. λy. y))(λx. λy. x)`
-`(λx. λy. y)`
-`λx. λy. y`
+    `λy. ((λz. (λc. y) z)(y))`
+    
+    `λy1. ((λz. (λc. y) z)(y))`
+    
+    `λy1. ((λc. y)(y))`
+    
+    `λy1. y`
+    
+
+5.  `(λx. λy. x y)(λz. (λc. c y) z)`
+
+    `(λy1. (λz. (λc. c y) z)(y1))`
+    
+    `(λy1. (λc. c y)(y1))`
+    
+    `λy1. y1 y`
+    
+
+6.  `(λx. x q)(λy. y y y)`
+
+    `(λy. y y y)(q)`
+    
+    `q q q`
+    
+    
+
+7.  `(λc. c(λx. (λx. λy. y))(λx. λy. x))(λq. q)`
+
+    `(λq. q)(λx. (λx. λy. y))(λx. λy. x)`
+    
+    `(λx. (λx. λy. y))(λx. λy. x)`
+    
+    `(λx. λy. y)`
+    
+    `λx. λy. y`
 
 8. `(λz. z)(λy. y y)(λx. x a)`
 `(λz. z)(λy. y y)(λx. x a)`
