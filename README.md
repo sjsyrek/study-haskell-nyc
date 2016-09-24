@@ -75,7 +75,7 @@ New York, NY 10016
 218 W. 18th Street, 2nd Floor  
 New York, NY 10011
 
-RSVP on Meetup to attend.
+[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234362554/) to attend.
 
 ##### Agenda
 - Review prior material
