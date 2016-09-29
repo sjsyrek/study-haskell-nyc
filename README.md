@@ -47,6 +47,7 @@ New York, NY 10011
 [RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/233953052/) to attend.
 
 ##### Agenda
+
 - Hellos and brief introduction to Haskell and functional programming
 - Chapter 1, All You Need is Lambda
 - Chapter 2, Hello Haskell!
@@ -65,6 +66,7 @@ New York, NY 10016
 [RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234096348/) to attend.
 
 ##### Agenda
+
 - Review chapters 1 and 2
 - Chapter 3, Strings
 - Start Chapter 4, Basic datatypes (time permitting)
@@ -78,6 +80,7 @@ New York, NY 10011
 [RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234362554/) to attend.
 
 ##### Agenda
+
 - Review prior material
 - Chapter 4, Basic datatypes
 
@@ -87,7 +90,11 @@ New York, NY 10011
 99 Madison Avenue, 15th Floor  
 New York, NY 10016
 
+[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234509577/) to attend.
+
 ##### Agenda
+
+- Review Chapter 4
 - Chapter 5, Types
 
 ### Resources and Bibliography for Further Reading
