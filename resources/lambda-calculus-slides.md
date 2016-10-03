@@ -116,7 +116,7 @@ _E<sub>1</sub>E<sub>2</sub>E<sub>3</sub>...E<sub>n</sub> ≡ (...((E<sub>1</sub>
 # predicates
 
 - `isZero ≡ (λx. x false not false)`
-- `isZero 0 ≡ (λx. x (λx. λy. y)(λa. a (λx. λy. y)(λx. λy. x))(λx. λy. y)) = (λx. λy. x) ≡ true`
+- `isZero 0 ≡ (λx. x (λx. λy. y)(λa. a (λx. λy. y)(λx. λy. x))(λx. λy. y))(λf. λx. x) = (λx. λy. x) ≡ true`
 - `lessThanOrEqual ≡ (λm. λn. isZero (sub m n))`
 - `equals ≡ (λm. λn. and (lessThanOrEqual m n)(lessThanOrEqual n m))`
 - _P E<sub>1</sub> E<sub>2</sub> ≡ if P is true E<sub>1</sub> else E<sub>2</sub>_
