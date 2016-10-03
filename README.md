@@ -128,3 +128,5 @@ Haskell on [Stack Overflow](http://stackoverflow.com/questions/tagged?tagnames=h
 [How I Start: Haskell](http://howistart.org/posts/haskell/1) - how to set-up a new Haskell project
 
 [Oliver Charles's Blog](https://ocharles.org.uk/blog/) - including 24 Days of Hackage
+
+[Typeclassopedia](https://wiki.haskell.org/Typeclassopedia) - a starting point for the student of Haskell wishing to gain a firm grasp of its standard type classes
