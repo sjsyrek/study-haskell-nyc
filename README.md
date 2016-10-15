@@ -97,6 +97,32 @@ New York, NY 10016
 - Review Chapter 4
 - Chapter 5, Types
 
+#### Meeting 5 – 17 October 2016 at 6:30 PM
+
+**YieldMo**
+218 W. 18th Street, 2nd Floor
+New York, NY 10011
+
+[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234726999/) to attend.
+
+##### Agenda
+
+- Review Chapter 5
+- Chapter 6, Typeclasses
+
+#### Meeting 6 – 24 October 2016 at 6:30 PM
+
+**ThoughtWorks**
+99 Madison Avenue, 15th Floor
+New York, NY 10016
+
+[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234869295/) to attend.
+
+##### Agenda
+
+- Review Chapter 6
+- Chapter 7, More functional patterns
+
 ### Resources and Bibliography for Further Reading
 
 Feel free to submit pull requests to add to or update this list!
