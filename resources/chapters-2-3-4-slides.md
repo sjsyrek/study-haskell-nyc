@@ -74,6 +74,7 @@ build` today, you should get the same result running `stack build` tomorrow.
 - Emacs: `commercialhaskell.github.io/intero`
 - Atom: `github.com/atom-haskell`
 - Sublime: `github.com/SublimeHaskell/SublimeHaskell`
+- VS Code: `github.com/JustusAdam/language-haskell`
 - Yi: `yi-editor.github.io`
 
 ---
@@ -360,7 +361,7 @@ dayOff        _ = False
 
 # the type universe
 
-![inline fill 40%](values-types-kinds.jpg)
+![inline fill 30%](values-types-kinds.jpg)
 
 ---
 
