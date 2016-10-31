@@ -42,7 +42,7 @@ See the [resources](https://github.com/sjsyrek/study-haskell-nyc/tree/master/res
 
 Meeting days, times, and locations may vary from week to week depending on the availability of space. If you can help with hosting future meetings, please contact me!
 
-For details of specific meetings, including dates, times, and locations, see the **New York Haskell Users Group** [Meetup](https://www.meetup.com/NY-Haskell/) page.
+For details of specific meetings, see the **New York Haskell Users Group** [Meetup](https://www.meetup.com/NY-Haskell/) page.
 
 ### Links (please pull request to add more)
 - [Programming with Nothing — Tom Stuart](https://www.youtube.com/watch?v=VUhlNx_-wYk)
