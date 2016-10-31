@@ -34,125 +34,32 @@ We will work through the book at the pace of roughly a chapter a week, meeting f
 
 All meetings will be announced through the **New York Haskell Users Group** [Meetup](https://www.meetup.com/NY-Haskell/) and [Slack team](http://ny-haskell.herokuapp.com/). You must RSVP to attend each meeting separately, as space is at a premium. If you cannot attend a meeting because it is full, please continue to work on your own anyway and come to a future meeting or talk to us on Slack.
 
+### Slides and other Resources
+
+See the [resources](https://github.com/sjsyrek/study-haskell-nyc/tree/master/resources) directory in this repo for presentation slides, bonus exercises, and other materials used during study session meetings.
+
 ### Schedule
 
 Meeting days, times, and locations may vary from week to week depending on the availability of space. If you can help with hosting future meetings, please contact me!
 
-#### Meeting 1 — 20 September 2016 at 6 PM
+For details of specific meetings, including dates, times, and locations, see the **New York Haskell Users Group** [Meetup](https://www.meetup.com/NY-Haskell/) page.
 
-**Behance**  
-104 5th Avenue, 4th Floor  
-New York, NY 10011
-
-[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/233953052/) to attend.
-
-##### Agenda
-
-- Hellos and brief introduction to Haskell and functional programming
-- Chapter 1, All You Need is Lambda
-- Chapter 2, Hello Haskell!
-
-##### Links (please pull request to add more)
+### Links (please pull request to add more)
 - [Programming with Nothing — Tom Stuart](https://www.youtube.com/watch?v=VUhlNx_-wYk)
 - [Y Not: Adventures in Functional Programming — Jim Weirich](https://www.youtube.com/watch?v=FITJMJjASUs)
 - [CSE 340 S16: Lambda Calculus](https://www.youtube.com/watch?v=KoIdCHDbpMI) (and subsequent lectures in the series)
-
-#### Meeting 2 — 26 September 2016 at 6:30 PM
-
-**ThoughtWorks**  
-99 Madison Avenue, 15th Floor  
-New York, NY 10016
-
-[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234096348/) to attend.
-
-##### Agenda
-
-- Review chapters 1 and 2
-- Chapter 3, Strings
-- Start Chapter 4, Basic datatypes (time permitting)
-
-#### Meeting 3 — 3 October 2016 at 6:30 PM
-
-**Yieldmo**  
-218 W. 18th Street, 2nd Floor  
-New York, NY 10011
-
-[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234362554/) to attend.
-
-##### Agenda
-
-- Review prior material
-- Chapter 4, Basic datatypes
-
-#### Meeting 4 — 10 October 2016 at 6:30 PM
-
-**ThoughtWorks**  
-99 Madison Avenue, 15th Floor  
-New York, NY 10016
-
-[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234509577/) to attend.
-
-##### Agenda
-
-- Review Chapter 4
-- Chapter 5, Types
-
-#### Meeting 5 – 17 October 2016 at 6:30 PM
-
-**YieldMo**
-218 W. 18th Street, 2nd Floor
-New York, NY 10011
-
-[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234726999/) to attend.
-
-##### Agenda
-
-- Review Chapter 5
-- Chapter 6, Typeclasses
-
-#### Meeting 6 – 24 October 2016 at 6:30 PM
-
-**ThoughtWorks**
-99 Madison Avenue, 15th Floor
-New York, NY 10016
-
-[RSVP on Meetup](https://www.meetup.com/NY-Haskell/events/234869295/) to attend.
-
-##### Agenda
-
-- Review Chapter 6
-- Chapter 7, More functional patterns
-
-### Resources and Bibliography for Further Reading
-
-Feel free to submit pull requests to add to or update this list!
-
-[Haskell Language Home Page](https://haskell-lang.org/) - your portal to the Haskell universe (preferred to haskell.org)
-
-[Stackage](https://www.stackage.org/) - search for Haskell modules or functions (Google has a hard time deciphering the funny operators, so use this instead)
-
-[Haskell is easy](http://haskelliseasy.readthedocs.io/en/latest/) - a curated list of Haskell libraries
-
-[Functional Programming Slack group](http://fpchat.com/) - a great resource for beginners and advanced coders alike
-
-\#haskell and \#haskell-beginners - IRC channels on [freenode](https://freenode.net/)
-
-Haskell on [reddit](https://www.reddit.com/r/haskell/)
-
-[New York Haskell Users Group](https://www.meetup.com/NY-Haskell/) on Meetup.com
-
-[Haskell 2010 Language Report](https://www.haskell.org/onlinereport/haskell2010/) - the language specification in full
-
-Haskell on [Stack Overflow](http://stackoverflow.com/questions/tagged?tagnames=haskell)
-
-[A Gentle Introduction to Haskell](https://www.haskell.org/tutorial/) - A little dated but still a valuable reference
-
-[Haskell for All](http://www.haskellforall.com/) - Gabriel Gonzalez's excellent blog
-
-[School of Haskell](https://www.schoolofhaskell.com/)
-
-[How I Start: Haskell](http://howistart.org/posts/haskell/1) - how to set-up a new Haskell project
-
-[Oliver Charles's Blog](https://ocharles.org.uk/blog/) - including 24 Days of Hackage
-
-[Typeclassopedia](https://wiki.haskell.org/Typeclassopedia) - a starting point for the student of Haskell wishing to gain a firm grasp of its standard type classes
+- [Haskell Language Home Page](https://haskell-lang.org/) - your portal to the Haskell universe (preferred to haskell.org)
+- [Stackage](https://www.stackage.org/) - search for Haskell modules or functions (Google has a hard time deciphering the funny operators, so use this instead)
+- [Haskell is easy](http://haskelliseasy.readthedocs.io/en/latest/) - a curated list of Haskell libraries
+- [Functional Programming Slack group](http://fpchat.com/) - a great resource for beginners and advanced coders alike
+- \#haskell and \#haskell-beginners - IRC channels on [freenode](https://freenode.net/)
+- Haskell on [reddit](https://www.reddit.com/r/haskell/)
+- [New York Haskell Users Group](https://www.meetup.com/NY-Haskell/) on Meetup.com
+- [Haskell 2010 Language Report](https://www.haskell.org/onlinereport/haskell2010/) - the language specification in full
+- Haskell on [Stack Overflow](http://stackoverflow.com/questions/tagged?tagnames=haskell)
+- [A Gentle Introduction to Haskell](https://www.haskell.org/tutorial/) - A little dated but still a valuable reference
+- [Haskell for All](http://www.haskellforall.com/) - Gabriel Gonzalez's excellent blog
+- [School of Haskell](https://www.schoolofhaskell.com/)
+- [How I Start: Haskell](http://howistart.org/posts/haskell/1) - how to set-up a new Haskell project
+- [Oliver Charles's Blog](https://ocharles.org.uk/blog/) - including 24 Days of Hackage
+- [Typeclassopedia](https://wiki.haskell.org/Typeclassopedia) - a starting point for the student of Haskell wishing to gain a firm grasp of its standard type classes
