@@ -81,7 +81,7 @@ _E<sub>1</sub>E<sub>2</sub>E<sub>3</sub>...E<sub>n</sub> ≡ (...((E<sub>1</sub>
 - `and ≡ (λa. λb. a b false) ≡ (λa. λb. a b (λx. λy. y))`
 - `or  ≡ (λa. λb. a true b) ≡ (λa. λb. a (λx. λy. x) b)`
 - `not ≡ (λa. a false true) ≡ (λa. a (λx. λy. y)(λx. λy. x))`
-- `and true false ≡ (λa. λb. ab (λx. λy. y))(λx. λy. x)(λx. λy. y) = (λx. λy. y) ≡ false`
+- `and true false ≡ (λa. λb. a b (λx. λy. y))(λx. λy. x)(λx. λy. y) = (λx. λy. y) ≡ false`
 - `not false ≡ (λa. a (λx. λy. y)(λx. λy. x))(λx. λy. y) = (λx. λy. x) ≡ true`
 
 ---
@@ -95,7 +95,7 @@ _E<sub>1</sub>E<sub>2</sub>E<sub>3</sub>...E<sub>n</sub> ≡ (...((E<sub>1</sub>
 - `...`
 - `succ ≡ (λn. λf. λx. f(n f x))`
 - `pred ≡ (λn. n (λp. λz. z(succ (p true))(p true))(λz. z 0 0) false)`
-- `succ 1 ≡ (n. f. x. f(n f x))(f. x. f(x)) = (λf. λx. f(f(x))) ≡ 2`
+- `succ 1 ≡ (λn. λf. λx. f(n f x))(λf. x. f(x)) = (λf. λx. f(f(x))) ≡ 2`
 - `pred 1 ≡ (λn. n (λp. λz. z(succ (p true))(p true))(λz. z 0 0) false)(λf. λx. f(f(x))) = (λf. λx. x) ≡ 0`
 
 ---
@@ -106,7 +106,7 @@ _E<sub>1</sub>E<sub>2</sub>E<sub>3</sub>...E<sub>n</sub> ≡ (...((E<sub>1</sub>
 - `sub ≡ (λm. λn. n pred m)`
 - `mult ≡ (λn. λm. λf. n(m f)) or (λn. λm. m (add n) 0)`
 - `exp ≡ (λx. λy. y x)`
-- `add 1 2 ≡ (n. m. f. x. n f(m f x))(f. x. f(x))(f. x. f(f(x))) = (λf. λx. f(f(f(x)))) ≡ 3`
+- `add 1 2 ≡ (λn. λm. λf. λx. n f(m f x))(λf. λx. f(x))(λf. λx. f(f(x))) = (λf. λx. f(f(f(x)))) ≡ 3`
 - `sub 2 1 ≡ (λm. λn. n (λn. n (λp. λz. z((λn. λf. λx. f(n f x))(p (λx. λy. x)))(p (λx. λy. x)))(λz. z (λf. λx. x)(λf. λx. x))(λx. λy. y)) m)(λf. λx. f(f(x)))(λf. λx. f(x)) = (λf. λx. f(x)) ≡ 1`
 - `mult 3 0 ≡ (λn. λm. λf. n(m f))(λf. λx. f(f(f(x))))(λf. λx. x) = (λf. λx. x) ≡ 0`
 - `exp 2 3 ≡ (λx. λy. y x)(λf. λx. f(f(x)))(λf. λx. f(f(f(x)))) = (λf. λx. f(f(f(f(f(f(f(f(x))))))))) ≡ 8`
