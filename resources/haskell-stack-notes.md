@@ -34,12 +34,12 @@ To set up a full project, enter the following commands:
 - `stack update` will update your packages, but you don't generally need to do this manually.
 - `stack upgrade` will reinstall Stack from source, including GHC.
 - `stack exec -- ghc --version` will tell you what version of GHC you are using.
-- `stack --resolver ghc-8.01 setup --reinstall` will upgrade your installation of GHC without rebuilding Stack itself (or install whichever version you prefer).
+- `stack --resolver ghc-8.0.1 setup --reinstall` will upgrade your installation of GHC without rebuilding Stack itself (or install whichever version you prefer).
 
 If you want to use a specific version of GHC for your global Stack installation, edit your `~/.stack/global-project/stack.yaml` file, and set the resolver to whichever version prefer, for example:
 
 - `resolver: lts-6.11` for GHC 7.10.3
-- `resolver: lts-7.0` for GHC 8.0.1
+- `resolver: lts-7.16` for GHC 8.0.1
 
 For project-specific installations of Stack, edit your project's local `stack.yaml` file instead.
 
