@@ -1,7 +1,7 @@
 {-# LANGUAGE InstanceSigs #-}
 
 import Data.Monoid
-import Control.Applicative
+import Control.Applicative hiding (ZipList)
 import Test.QuickCheck
 import Test.QuickCheck.Checkers
 import Test.QuickCheck.Classes
@@ -65,32 +65,32 @@ instance Applicative List where
 
 -- ZipList
 
-newtype ZipList' a = ZipList' (List a)
+newtype ZipList a = ZipList (List a)
   deriving (Eq, Show)
 
-instance Monoid a => Monoid (ZipList' a) where
-  mempty :: ZipList' a
+instance Monoid a => Monoid (ZipList a) where
+  mempty :: ZipList a
   mempty = undefined
 
-  mappend :: ZipList' a -> ZipList' a -> ZipList' a
+  mappend :: ZipList a -> ZipList a -> ZipList a
   mappend = undefined
 
-instance Functor ZipList' where
-  fmap :: (a -> b) -> ZipList' a -> ZipList' b
+instance Functor ZipList where
+  fmap :: (a -> b) -> ZipList a -> ZipList b
   fmap = undefined
 
-instance Applicative ZipList' where
-  pure :: a -> ZipList' a
+instance Applicative ZipList where
+  pure :: a -> ZipList a
   pure = undefined
 
-  (<*>) :: ZipList' (a -> b) -> ZipList' a -> ZipList' b
+  (<*>) :: ZipList (a -> b) -> ZipList a -> ZipList b
   (<*>) = undefined
 
 -- Validation
 
 data Validation e a =
-    Failure' e
-  | Success' a
+    Failure e
+  | Success a
   deriving (Eq, Show)
 
 instance Functor (Validation e) where
@@ -238,9 +238,6 @@ take' _ Nil = Nil
 take' 0 xs = Nil
 take' n (Cons x xs) = Cons x (take' (n - 1) xs)
 
-instance Arbitrary a => Arbitrary (Sum a) where
-  arbitrary = Sum <$> arbitrary
-
 instance Arbitrary a => Arbitrary (List a) where
   arbitrary = do
     a <- arbitrary
@@ -256,16 +253,16 @@ instance Eq a => EqProp (List a) where
           ys' = let l = ys
                 in take' 3000 l
 
-instance Arbitrary a => Arbitrary (ZipList' a) where
+instance Arbitrary a => Arbitrary (ZipList a) where
   arbitrary = do
     l <- arbitrary
-    return $ ZipList' l
+    return $ ZipList l
 
-instance Eq a => EqProp (ZipList' a) where
+instance Eq a => EqProp (ZipList a) where
   xs =-= ys = xs' `eq` ys'
-    where xs' = let (ZipList' l) = xs
+    where xs' = let (ZipList l) = xs
                 in take' 3000 l
-          ys' = let (ZipList' l) = ys
+          ys' = let (ZipList l) = ys
                 in take' 3000 l
 
 instance Arbitrary a => Arbitrary (Pair a) where
@@ -320,7 +317,7 @@ instance (Arbitrary a, Arbitrary b) => Arbitrary (Four' a b) where
 instance (Eq a, Eq b) => EqProp (Four' a b) where (=-=) = eq
 
 listTrigger = undefined :: List (String, Int, Int)
-zipListTrigger = undefined :: ZipList' (String, Int, Int)
+zipListTrigger = undefined :: ZipList (String, Int, Int)
 pairTrigger = undefined :: Pair (String, String, Int)
 twoTrigger = undefined :: Two SSI SSI
 threeTrigger = undefined :: Three SSI SSI SSI
