@@ -2,20 +2,22 @@
 
 ## Installation
 
-Visit the [Stack website](https://docs.haskellstack.org/en/stable/README/) for the most up-to-date instructions for installing Haskell using the Stack platform. Avoid using other installation solutions, including any variant of the Haskell platform.
-
-For Mac OS X users who have [Homebrew](http://brew.sh/):
-
-- `brew install haskell-stack`
+Visit the [Get Started page on haskell-lang.org](https://haskell-lang.org/get-started) or read the [Stack documentation](https://docs.haskellstack.org/en/stable/README/) for the most up-to-date instructions for installing Haskell using the Stack platform. Avoid using other installation solutions, including any variant of the Haskell Platform.
 
 On other Unix and Unix-like systems, you can generally install directly by using one of the following commands:
 
 - `curl -sSL https://get.haskellstack.org/ | sh`
 - `wget -qO- https://get.haskellstack.org/ | sh`
 
-Windows users should consult the [documentation](https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows).
+For Mac OS X users who have [Homebrew](http://brew.sh/):
 
-If you accidentally installed the Haskell Platform or have an old installation haunting your machine, you can try following [these instructions](https://mail.haskell.org/pipermail/haskell-cafe/2011-March/090170.html) or using [this code](https://gist.github.com/steakknife/3775443).
+- `brew install haskell-stack`
+
+Note that the Homebrew installation could be out of date at times, so the curl method is preferred.
+
+Windows users should download the [64-bit installer](https://www.stackage.org/stack/windows-x86_64-installer) directly from Stackage.
+
+If you accidentally installed the Haskell Platform or have an old installation haunting your machine, you can try following [these instructions](https://mail.haskell.org/pipermail/haskell-cafe/2011-March/090170.html) or using [this code](https://gist.github.com/steakknife/3775443) to cleanse your system.
 
 ## Setting up a project
 
@@ -33,23 +35,27 @@ To set up a full project, enter the following commands:
 
 - `stack update` will update your packages, but you don't generally need to do this manually.
 - `stack upgrade` will reinstall Stack from source, including GHC.
+- `stack config set resolver lts` will update Stack (globally or locally within a project) to the latest LTS
+- `stack config set resolver lts-9.3` will set Stack to use a specific LTS
 - `stack exec -- ghc --version` will tell you what version of GHC you are using.
-- `stack --resolver ghc-8.0.1 setup --reinstall` will upgrade your installation of GHC without rebuilding Stack itself (or install whichever version you prefer).
 
 If you want to use a specific version of GHC for your global Stack installation, edit your `~/.stack/global-project/stack.yaml` file, and set the resolver to whichever version prefer, for example:
 
 - `resolver: lts-6.11` for GHC 7.10.3
 - `resolver: lts-7.16` for GHC 8.0.1
+- `resolver: lts-9.3` for GHC 8.0.2
 
 For project-specific installations of Stack, edit your project's local `stack.yaml` file instead.
 
 ## Shell auto-completions
 
-Add the following line(s) to your shell's configuration dotfile (e.g. `.bash_profile` or `zshrc`) to enable support for shell tab completion for standard Stack arguments.
+Add the following line(s) to your shell's configuration dotfile (e.g. `.bash_profile` or `.zshrc`) to enable support for shell tab completion for standard Stack arguments.
 
 ### bash
 
-`eval "$(stack --bash-completion-script stack)"`
+```sh
+eval "$(stack --bash-completion-script stack)"
+```
 
 ### zsh
 
@@ -67,3 +73,4 @@ If typing `stack ghc` or `stack ghci` is annoying you, add the following aliases
 alias ghci="stack exec -- ghci"
 alias ghc="stack exec -- ghc"
 ```
+
